@@ -23,7 +23,7 @@ def update( message=None ):
         cmd(f"""git commit -m '{ message }'""")
         cmd("git push -u origin master")
     except Exception as e:
-        print('No updates found')
+        pass
 
 def main():
     parser = argparse.ArgumentParser()
