@@ -12,7 +12,7 @@ cmd = lambda x: subprocess.run(x, check=True, shell=True)
 
 def setup_origin( path=f"""{ CONFIG['org'] }/{ PROJECT.name }""" ):
         cmd(f'git remote add origin git@github.com:{ path }.git')
-
+        #cmd(f'git remote set-url origin git@github.com:{ path }.git')
 
 def update( message=None ):
     if not message: message = "update the repository"
