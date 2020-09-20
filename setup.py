@@ -37,6 +37,14 @@ with open("MANIFEST.in", "w") as f:
 
 def form(**kwargs) : pass #print(kwargs)
 
+"""            __
+  ______ _____/  |_ __ ________
+ /  ___// __ \   __\  |  \____ \
+ \___ \\  ___/|  | |  |  /  |_> >
+/____  >\___  >__| |____/|   __/
+     \/     \/           |__|
+"""
+
 #setuptools.setup
 form(
     packages                        = setuptools.find_packages(exclude=(".git",)),
