@@ -1,6 +1,11 @@
-import subprocess, argparse
+import subprocess, argparse, json
 
 cmd = lambda x: subprocess.run(x, check=True, shell=True)
+
+with open('config.json') as f:
+  data = json.load(f)
+
+print(data)
 
 def setup_origin( path="hlop3z/python-skeleton" ):
         cmd(f'git remote add origin git@github.com:{ path }.git')
