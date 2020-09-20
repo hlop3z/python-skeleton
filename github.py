@@ -1,12 +1,20 @@
-import subprocess, argparse, json
+import subprocess, argparse, json, pathlib
+
+
+
+
+PROJECT = pathlib.Path(__file__).resolve().parents[0]
 
 with open('config.json') as f:
   CONFIG = json.load(f)
 
+
+
+
 cmd = lambda x: subprocess.run(x, check=True, shell=True)
 
 
-def setup_origin( path=f"""{ CONFIG['org'] }/{ CONFIG['project'] }""" ):
+def setup_origin( path=f"""{ CONFIG['org'] }/{ PROJECT.name }""" ):
         cmd(f'git remote add origin git@github.com:{ path }.git')
 
 

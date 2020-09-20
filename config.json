@@ -1,5 +1,5 @@
 {
   "debug"   : true,
-  "org"     : "hlop3z",
-  "project" : "python-skeleton"
+  "version" : "0.0.1",
+  "org"     : "hlop3z"
 }
