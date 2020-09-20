@@ -1,5 +1,22 @@
 {
-  "debug"   : true,
-  "version" : "0.0.1",
-  "org"     : "hlop3z"
+  "debug"           : true,
+  "version"         : "0.0.1",
+
+  "org"             : "hlop3z",
+  "email"           : "hlopez.devops@gmail.com",
+  "url"             : null,
+  "description"     : "App - Python Skeleton",
+
+  "python_requires" : ">=3.7",
+
+  "project_urls"    : {
+
+  },
+
+  "classifiers"     : [
+    "Programming Language :: Python :: 3.7",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+  ]
+
 }

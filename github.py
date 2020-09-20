@@ -1,17 +1,13 @@
 import subprocess, argparse, json, pathlib
 
-
-
-
 PROJECT = pathlib.Path(__file__).resolve().parents[0]
 
 with open('config.json') as f:
-  CONFIG = json.load(f)
-
-
+    CONFIG = json.load(f)
 
 
 cmd = lambda x: subprocess.run(x, check=True, shell=True)
+
 
 
 def setup_origin( path=f"""{ CONFIG['org'] }/{ PROJECT.name }""" ):
@@ -23,6 +19,7 @@ def update( message=None ):
     cmd("git add .")
     cmd(f"""git commit -m '{ message }'""")
     cmd("git push -u origin master")
+
 
 
 if __name__ == '__main__':
