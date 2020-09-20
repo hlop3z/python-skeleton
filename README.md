@@ -1,2 +1,2 @@
-# python-skeleton
-Project
+# python_skeleton
+Cookie-Cutter Project
