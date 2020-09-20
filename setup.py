@@ -25,7 +25,7 @@ def form(**kwargs) : print(kwargs)
 setuptools.setup(
     packages                        = setuptools.find_packages(exclude=(".git",)),
     url                             = f"""https://github.com/{ CONFIG['org'] }/{ PROJECT.name }""" if not CONFIG['url'] else CONFIG['url'],
-    package_dir                     = {'': 'core'},
+    package_dir                     = {'.': 'core'},
     python_requires                 = CONFIG['python_requires'],
     name                            = PROJECT.name,
     version                         = CONFIG['version'],

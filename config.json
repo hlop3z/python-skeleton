@@ -1,13 +1,12 @@
 {
   "debug"           : true,
-  "version"         : "0.0.1",
+  "version"         : "0.0.2",
 
+  "python_requires" : ">=3.7",
   "org"             : "hlop3z",
   "email"           : "hlopez.devops@gmail.com",
   "url"             : null,
   "description"     : "App - Python Skeleton",
-
-  "python_requires" : ">=3.7",
 
   "project_urls"    : {
 

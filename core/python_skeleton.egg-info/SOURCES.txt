@@ -1,7 +1,0 @@
-MANIFEST.in
-README.md
-setup.py
-core/python_skeleton.egg-info/PKG-INFO
-core/python_skeleton.egg-info/SOURCES.txt
-core/python_skeleton.egg-info/dependency_links.txt
-core/python_skeleton.egg-info/top_level.txt

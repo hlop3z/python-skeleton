@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+core/__demo__/__init__.py
+python_skeleton.egg-info/PKG-INFO
+python_skeleton.egg-info/SOURCES.txt
+python_skeleton.egg-info/dependency_links.txt
+python_skeleton.egg-info/top_level.txt
