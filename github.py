@@ -6,7 +6,6 @@ def setup_origin( path="hlop3z/python-skeleton" ):
         cmd(f'git remote add origin git@github.com:{ path }.git')
 
 
-
 def update( message=None ):
     if not message: message = "update the repository"
     cmd("git add .")
