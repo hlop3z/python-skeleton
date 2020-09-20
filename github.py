@@ -6,7 +6,7 @@ with open('config.json') as f:
 cmd = lambda x: subprocess.run(x, check=True, shell=True)
 
 
-def setup_origin( path=CONFIG['project'] ):
+def setup_origin( path=f"""{ CONFIG['org'] }/{ CONFIG['project'] }""" ):
         cmd(f'git remote add origin git@github.com:{ path }.git')
 
 
