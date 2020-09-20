@@ -2,7 +2,7 @@ import subprocess, argparse, json, pathlib
 
 PROJECT = pathlib.Path(__file__).resolve().parents[0]
 
-with open('config.json') as f:
+with open('CONFIG.json') as f:
     CONFIG = json.load(f)
 
 
