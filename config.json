@@ -1,4 +1,5 @@
 {
+  "debug"   : true,
   "org"     : "hlop3z",
   "project" : "python-skeleton"
 }

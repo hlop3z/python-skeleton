@@ -28,3 +28,5 @@ if __name__ == '__main__':
         update( args.update[0] )
     else:
         update()
+
+    print( CONFIG['debug'] )
