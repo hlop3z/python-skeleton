@@ -1,13 +1,12 @@
 import subprocess, argparse, json
 
+with open('config.json') as f:
+  CONFIG = json.load(f)
+
 cmd = lambda x: subprocess.run(x, check=True, shell=True)
 
-with open('config.json') as f:
-  data = json.load(f)
 
-print(data)
-
-def setup_origin( path="hlop3z/python-skeleton" ):
+def setup_origin( path=CONFIG['project'] ):
         cmd(f'git remote add origin git@github.com:{ path }.git')
 
 
@@ -16,7 +15,6 @@ def update( message=None ):
     cmd("git add .")
     cmd(f"""git commit -m '{ message }'""")
     cmd("git push -u origin master")
-
 
 
 if __name__ == '__main__':
