@@ -18,9 +18,12 @@ def setup_update( path=f"""{ CONFIG['org'] }/{ PROJECT.name }""" ):
 
 def update( message=None ):
     if not message: message = "update the repository"
-    cmd("git add .")
-    cmd(f"""git commit -m '{ message }'""")
-    cmd("git push -u origin master")
+    try:
+        cmd("git add .")
+        cmd(f"""git commit -m '{ message }'""")
+        cmd("git push -u origin master")
+    except Exception as e:
+        print('No updates found')
 
 def main():
     parser = argparse.ArgumentParser()
