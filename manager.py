@@ -60,7 +60,8 @@ def main():
     args = parser.parse_args()
 
     if args.module:
-        app_path = f"{ PROJECT.name }/{ args.module[0] }"
+        app_name = args.module[0].lower().replace('-','_')
+        app_path = f"{ PROJECT.name }/{ app_name }"
 
         try                  : os.mkdir( app_path )
         except Exception as e: pass
