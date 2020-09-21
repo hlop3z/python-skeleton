@@ -1,6 +1,7 @@
 include README.md
 include LICENSE.txt
 include CONFIG.json
+
 include docs/*
 include static/*
 include static/vendors/*

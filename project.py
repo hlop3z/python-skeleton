@@ -18,7 +18,7 @@ print( { app_name }.plugins )
 
 # Def
 { app_name }.__demo__.hello()
-    """
+    """.strip()
 
     try:
         shutil.rmtree("python_skeleton/tests")
@@ -33,7 +33,7 @@ print( { app_name }.plugins )
     os.mkdir('python_skeleton/tests')
 
     with open("python_skeleton/examples/example.py", "w") as f:
-        f.write( EXAMPLE_FILE.strip() )
+        f.write( EXAMPLE_FILE )
         f.close()
 
     shutil.move("python_skeleton/python_skeleton", f"python_skeleton/{ app_name }")

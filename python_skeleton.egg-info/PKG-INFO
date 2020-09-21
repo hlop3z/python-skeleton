@@ -9,8 +9,16 @@ License: UNKNOWN
 Description: # python_skeleton
         Cookie-Cutter Project
         
+        # New File
         ```
-        git clone https://github.com/hlop3z/python_skeleton
+        nano project.py
+        ```
+        # Code (URL)
+        [COPY-ME](https://raw.githubusercontent.com/hlop3z/python_skeleton/master/project.py)
+        
+        # run
+        ```
+        python3.7 project.py myapp
         ```
         
 Platform: UNKNOWN
