@@ -21,6 +21,7 @@ def update( message=None ):
     try:
         cmd("git add .")
         cmd(f"""git commit -m '{ message }'""")
+        cmd("git pull origin master")
         cmd("git push -u origin master")
     except Exception as e:
         pass
