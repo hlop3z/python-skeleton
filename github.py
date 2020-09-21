@@ -25,7 +25,7 @@ def update( message=None ):
     except Exception as e:
         pass
 
-def pull_updates( message=None ):
+def pull_updates():
     try:
         cmd("git pull origin master")
     except Exception as e:
@@ -42,6 +42,7 @@ def main():
     if args.setup           : setup_origin()
     elif args.setup_update  : setup_update()
     elif args.update        : update( args.update[0] )
+    elif args.get           : pull_updates()
     else                    : update()
 
 if __name__ == '__main__':
