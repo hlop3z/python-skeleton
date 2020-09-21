@@ -5,7 +5,7 @@ Cookie-Cutter Project
 ```
 nano project.py
 ```
-# Code
+# Code (URL)
 [copy-me](https://raw.githubusercontent.com/hlop3z/python_skeleton/master/control.py)
 
 # run
