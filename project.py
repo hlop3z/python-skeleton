@@ -26,6 +26,7 @@ print( { app_name }.plugins )
         shutil.rmtree("python_skeleton/examples")
         shutil.rmtree("python_skeleton/dist")
         shutil.rmtree("python_skeleton/python_skeleton.egg-info")
+        os.remove("python_skeleton/project.py")
     except Exception as e:
         raise
 
