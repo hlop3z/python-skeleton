@@ -25,8 +25,15 @@ def update( message=None ):
     except Exception as e:
         pass
 
+def pull_updates( message=None ):
+    try:
+        cmd("git pull origin master")
+    except Exception as e:
+        pass
+
 def main():
     parser = argparse.ArgumentParser()
+    parser.add_argument('-g', '--get', action='store_true' , help='Get Updates from Master/Repo')
     parser.add_argument('-u', '--update', nargs="?"         , help='Update Git & Github')
     parser.add_argument('-s', '--setup', action='store_true', help='Setup Github path org/repo')
     parser.add_argument('-su', '--setup_update', action='store_true', help='Setup-Update Github path org/repo')
