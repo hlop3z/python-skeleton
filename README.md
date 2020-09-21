@@ -1,6 +1,11 @@
 # python_skeleton
 Cookie-Cutter Project
 
+# New File
+```
+nano project.py
+```
+# Code
 ```
 import subprocess, argparse, json, pathlib, shutil, os
 
@@ -57,4 +62,9 @@ def main():
 
 if __name__ == '__main__':
     main()
-  ```
+```
+
+# run
+```
+python3.7 project.py myapp
+```
