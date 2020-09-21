@@ -6,7 +6,7 @@ Cookie-Cutter Project
 nano project.py
 ```
 # Code
-[controller](https://github.com/hlop3z/python_skeleton/blob/master/control.py)
+[controller](https://github.com/hlop3z/python_skeleton/control.py)
 
 # run
 ```
