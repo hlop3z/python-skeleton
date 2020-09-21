@@ -73,11 +73,11 @@ def form(**kwargs) : pass #print(kwargs)
 #
 setuptools.setup(
     packages                        = setuptools.find_packages(exclude=(".git",)),
-    url                             = f"""https://github.com/{ CONFIG['org'] }/{ PROJECT.name }""" if not CONFIG['url'] else CONFIG['url'],
+    url                             = f"""https://github.com/{ CONFIG['organization'] }/{ PROJECT.name }""" if not CONFIG['url'] else CONFIG['url'],
     python_requires                 = CONFIG['python_requires'],
     name                            = PROJECT.name,
     version                         = CONFIG['version'],
-    author                          = CONFIG['org'],
+    author                          = CONFIG['organization'],
     author_email                    = CONFIG['email'],
     description                     = CONFIG['description'],
     long_description                = LONG_DESCRIPTION,

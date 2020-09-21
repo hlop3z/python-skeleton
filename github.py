@@ -10,10 +10,10 @@ cmd = lambda x: subprocess.run(x, check=True, shell=True)
 
 
 
-def setup_origin( path=f"""{ CONFIG['org'] }/{ PROJECT.name }""" ):
+def setup_origin( path=f"""{ CONFIG['organization'] }/{ PROJECT.name }""" ):
         cmd(f'git remote add origin git@github.com:{ path }.git')
 
-def setup_update( path=f"""{ CONFIG['org'] }/{ PROJECT.name }""" ):
+def setup_update( path=f"""{ CONFIG['organization'] }/{ PROJECT.name }""" ):
         cmd(f'git remote set-url origin git@github.com:{ path }.git')
 
 def update( message=None ):
