@@ -21,6 +21,7 @@ print( { app_name }.plugins )
     """.strip()
 
     try:
+        shutil.rmtree("python_skeleton/.git")
         shutil.rmtree("python_skeleton/tests")
         shutil.rmtree("python_skeleton/examples")
         shutil.rmtree("python_skeleton/dist")
