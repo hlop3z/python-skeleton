@@ -25,7 +25,7 @@ def __getattr__(name):
 def __dir__():
     """List available plug-ins"""
     _import_plugins()
-    return list(PLUGINS.keys())
+    return list( PLUGINS.keys() )
 
 def _import_plugins():
     """Import all resources to register plug-ins"""
