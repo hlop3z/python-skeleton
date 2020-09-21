@@ -1,7 +1,3 @@
-# python_skeleton
-Cookie-Cutter Project
-
-```
 import subprocess, argparse, json, pathlib, shutil, os
 
 PATH = os.getcwd()
@@ -57,4 +53,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-  ```
