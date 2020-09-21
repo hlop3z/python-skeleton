@@ -19,6 +19,7 @@ MANIFEST_TEXT = f"""
 include README.md
 include LICENSE.txt
 include CONFIG.json
+include requirements.txt
 
 { GET_DATA_FILES('docs') }
 { GET_DATA_FILES('static') }
