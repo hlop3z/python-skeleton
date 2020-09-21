@@ -56,7 +56,7 @@ def hello():
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('module', nargs=1, help='''Clone Github "hlop3z/python_skeleton" for a new project''')
+    parser.add_argument('module', nargs=1, help='''Create new "Module" for your project.''')
     args = parser.parse_args()
 
     if args.module:
