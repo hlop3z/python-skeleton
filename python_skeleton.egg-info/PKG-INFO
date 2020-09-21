@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: python-skeleton
-Version: 0.0.2
+Version: 0.0.1
 Summary: App - Python Skeleton
 Home-page: https://github.com/hlop3z/python_skeleton
 Author: hlop3z
@@ -8,6 +8,10 @@ Author-email: hlopez.devops@gmail.com
 License: UNKNOWN
 Description: # python_skeleton
         Cookie-Cutter Project
+        
+        ```
+        git clone https://github.com/hlop3z/python_skeleton
+        ```
         
 Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3.7
