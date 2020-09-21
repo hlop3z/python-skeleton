@@ -13,4 +13,3 @@ nano project.py
 python3.7 project.py myapp
 ```
 
-# It Worked!
